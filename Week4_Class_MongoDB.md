@@ -28,7 +28,7 @@
 
 - Insert many records
 
-	`
+	```
 	db.student.insertMany(
 	[
 	{
@@ -53,7 +53,7 @@
 	{"student_info":"AA10","student_name":"Yor","student_address":[{"street": "27 Elm St","city": "Chicago", "state_prov" : "ON", "zip" : "12345", "country" : "CAN"}], "student_age":"30","student_dob":"24-12-1992"}
 	]
 	);
-	`
+	```
 
 - show the records from the 'student' collection
 
