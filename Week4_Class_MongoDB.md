@@ -2,7 +2,7 @@
 
 A basic sample is available in the route:
 
-[a relative link](mongoose-guide/)
+[/mongoose-guide/](mongoose-guide/)
 
 
 - Start the service (runs in the background)
