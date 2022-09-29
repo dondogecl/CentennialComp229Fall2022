@@ -1,5 +1,10 @@
 # MongoDB
 
+A basic sample is available in the route:
+
+[a relative link](mongoose-guide/)
+
+
 - Start the service (runs in the background)
 
 	`mongod`
