@@ -1,0 +1,15 @@
+{
+  "name": "connectserver",
+  "version": "1.0.0",
+  "description": "exercise to test the connect module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.7.0"
+  }
+}
