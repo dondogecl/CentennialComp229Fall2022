@@ -10,24 +10,25 @@
 
 - List collections
 
-	`show collections
-	show dbs`
+	`show collections`
+	`show dbs`
 
 - List current data base
 
-	db
+	`db`
  
 - Create a new collection
 
-	use new_database_name
+	`use new_database_name`
 
 - Insert a document into a collection
 
-	use collection_name
-	db.collection_name.insert( {"key" : "value", "key2", "value2"} )
+	`use collection_name`
+	`db.collection_name.insert( {"key" : "value", "key2", "value2"} )`
 
 - Insert many records
 
+	`
 	db.student.insertMany(
 	[
 	{
@@ -52,11 +53,12 @@
 	{"student_info":"AA10","student_name":"Yor","student_address":[{"street": "27 Elm St","city": "Chicago", "state_prov" : "ON", "zip" : "12345", "country" : "CAN"}], "student_age":"30","student_dob":"24-12-1992"}
 	]
 	);
+	`
 
 - show the records from the 'student' collection
 
-	db.student.find().pretty()
+	`db.student.find().pretty()`
 
 - update a record from the 'student' collection
 
-	db.student.update({"student_info": "AA10"}, { $set: {"country" : "SpyFamily"}} )
+	`db.student.update({"student_info": "AA10"}, { $set: {"country" : "SpyFamily"}} )`
