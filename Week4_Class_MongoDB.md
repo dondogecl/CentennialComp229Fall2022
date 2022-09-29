@@ -1,22 +1,28 @@
 # MongoDB
 
 - Start the service (runs in the background)
-	mongod
+
+	`mongod`
 
 - Open CLI in a new terminal
-	mongo
+	
+	`mongo`
 
 - List collections
-	show collections
-	show dbs
+
+	`show collections
+	show dbs`
 
 - List current data base
+
 	db
  
 - Create a new collection
+
 	use new_database_name
 
 - Insert a document into a collection
+
 	use collection_name
 	db.collection_name.insert( {"key" : "value", "key2", "value2"} )
 
@@ -48,7 +54,9 @@
 	);
 
 - show the records from the 'student' collection
+
 	db.student.find().pretty()
 
 - update a record from the 'student' collection
+
 	db.student.update({"student_info": "AA10"}, { $set: {"country" : "SpyFamily"}} )
