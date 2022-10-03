@@ -1,0 +1,12 @@
+{
+    "name" : "Portfolio",
+    "version": "0.0.1",
+    "description": "Portfolio app",
+    "dependencies": {
+        "express": "^4.16.1",
+        "morgan" : "^1.9.0",
+        "compression": "^1.7.4",
+        "body-parser": "^1.18.3",
+        "method-override": "3.0.0"
+    }
+}
