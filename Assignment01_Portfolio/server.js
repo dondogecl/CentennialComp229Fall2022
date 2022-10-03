@@ -1,4 +1,7 @@
 // express server
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
+
+// imports
 const express = require('./config/express');
 
 // create express app
