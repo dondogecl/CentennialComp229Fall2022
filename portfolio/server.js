@@ -13,12 +13,32 @@ const path = require('path');
 const mongoose = require('mongoose');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
+const passport = require('passport');
+const localStrategy = require('passport-local').Strategy;
+const bcrypt = require('bcrypt');
+
+// DB
+
+// URI
+let DB = require("./config/db");
+
+// use mongoose URI to connect to the DB
+mongoose.connect(process.env.URI || DB.URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+let mongoDB = mongoose.connection;
+mongoDB.on("error", console.error.bind(console, "Connection Error:"));
+mongoDB.once("open", () => {
+  console.log("Database Connected!..");
+});
+
+
 // require routers
 const indexRouter = require('./routes/index');
 const servicesRouter = require('./routes/services');
 const contactRouter = require('./routes/contact');
-//const contactForm = require('./routes/contactform');
-//const adminRouter = require('./routes/admin');
 
 
 // middleware
@@ -31,7 +51,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 /** 
- * @routes
+ * routes
 */
 
 // Home page
