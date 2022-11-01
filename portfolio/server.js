@@ -10,7 +10,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-//const articleRouter = require('./routes/articles');
+const logger = require('morgan');
+//const indexRouter = require('routes/index');
+const cookieParser = require('cookie-parser');
+
 
 // middleware
 app.set('view engine', 'ejs');
@@ -23,24 +26,25 @@ app.use(express.static('public'));
 
 // Home page
 app.get('/', (req, res) => {
-    //res.send("Homepage");
+    console.log('/');
     res.render('index',{title: 'Home'});
 });
 
 // about me page
-app.get('/about', (req, res) => {
-    res.render('about', { title: 'About Me' });
-});
+// app.get('/about', (req, res) => {
+//     res.render('about', { title: 'About Me' });
+// });
 
 // projects page
-app.get('/projects', (req, res) => {
-    res.render('projects', { title: 'Projects' });
-});
+// app.get('/projects', (req, res) => {
+//     res.render('projects', { title: 'Projects' });
+// });
 
 // route contact
 app.get('/contact', (req, res) => {
-    res.send("Contact");
-    //res.render('contact.ejs');
+    console.log('/contact');
+    res.render("contact.ejs", { title: 'Contact Me' });
+    
 });
 
 app.use('/public', express.static('public'));

@@ -1,85 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-
-    <!-- Favicons -->
-    <link href="images/favicon.png" rel="icon" />
-    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link href="public/images/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="public/images/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="public/images/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="public/images/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="public/images/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="public/images/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="public/stylesheets/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: iPortfolio - v3.7.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  </head>
+<%- include ('partials/head.ejs') %>
   <body>
     
-<!-- ======= Mobile nav toggle button ======= -->
-<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-<!-- ======= Header ======= -->
-<header id="header">
-  <div class="d-flex flex-column">
-
-    <div class="profile">
-      <img src="public/images/dogecl-avatar.png" alt="" class="img-fluid rounded-circle">
-      <h1 class="text-light"><a href="index.html">Doge CL</a></h1>
-      <div class="social-links mt-3 text-center">
-        <a href="https://twitter.com/hizoka_andou" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/mrhizoka" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/dogecl.gif/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.twitch.tv/doge_cl" class="twitch"><i class="bx bxl-twitch"></i></a>
-        <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-      </div>
-    </div>
-
-    <nav id="navbar" class="nav-menu navbar">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Start</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Player</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Level Selection</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Galeria</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contáctame</span></a>
-        </li>
-      </ul>
-    </nav><!-- .nav-menu -->
-  </div>
-</header><!-- End Header -->
+<%- include ('partials/header.ejs') %>
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
   <div class="hero-container" data-aos="fade-in">
     <h1>Doge CL</h1>
-    <p>Soy <span class="typed" data-typed-items="Desarrollador, Jugador, Game Creator, Podcaster"></span></p>
+    <p>I am a <span class="typed" data-typed-items="Developer, Player, Game Creator, Podcaster"></span></p>
   </div>
 </section><!-- End Hero -->
 
@@ -91,9 +21,8 @@
 
       <div class="section-title">
         <h2>About</h2>
-        <p>Bienvenido a mi sitio. Soy un desarrollador de software que en su tiempo libre disfruta jugar y programar
-          videojuegos. También puedes encontrarme en Podcasts, Twitch, blogs sobre programación, data
-          y todo lo relacionado con <strong>Python</strong>.</p>
+        <p>Welcome to my website. I'm a software development student who also codes for a living. You can find me in Podcasts, Twitch, programming communities, 
+          data related blogs and <strong>everything Python</strong>.</p>
       </div>
 
       <div class="row">
@@ -101,31 +30,28 @@
           <img src="public/images/irl_doge.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Podcaster &amp; Desarrollador Python.</h3>
+          <h3>Podcaster &amp; Python Developer.</h3>
           <p class="fst-italic">
-            Anteriormente locutor en <strong>Universidad Friky</strong>, <strong>Kiri</strong> y
-            <strong>Proincast</strong>. Actualmente locutor y creador de contenido en <strong>DataCrossing</strong>,
-            Twitch.tv y <strong>Dev.to</strong>.
+            Former presenter at <strong>Universidad Friky</strong>, <strong>Kiri</strong> y
+            <strong>Proincast</strong>. Currently presenter and content creator at <strong>DataCrossing</strong>,
+            Twitch.tv, and <strong>Dev.to</strong>.
           </p>
           <div class="row">
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Día Internacional del
-                    Libro</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Stand Name:</strong> <span>Doge</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+13 13</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>País:</strong> <span>Chile y Canadá</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>International book day</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Nickname:</strong> <span>Doge</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(see Contact section)</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Countries:</strong> <span>Chile and Canada</span></li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Poder de Pelea:</strong> <span>+9000</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Carrera:</strong> <span>Software Engineer +
-                    Podcaster</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>contacto(arroba)doge.cl</span>
+                <li><i class="bi bi-chevron-right"></i> <strong>Years of experience:</strong> <span>4</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Software Engineer Technician (in progress)</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>contacto(at)doge.cl</span>
                 </li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Idiomas:</strong> <span>Español, Inglés, Japonés,
-                    Francés</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>Inglés, Spanish, and Japanese</span></li>
               </ul>
             </div>
           </div>
@@ -152,7 +78,7 @@
             <div class="col-lg-6" data-aos="fade-up">
   
               <div class="progress">
-                <span class="skill">FPS / Shooters / COD <i class="val">77%</i></span>
+                <span class="skill">Data Analytics <i class="val">77%</i></span>
                 <div class="progress-bar-wrap">
                   <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">
                   </div>
@@ -160,17 +86,17 @@
               </div>
   
               <div class="progress">
-                <span class="skill">Mario Kart <i class="val">80%</i></span>
+                <span class="skill">Big Data <i class="val">70%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>
               </div>
   
               <div class="progress">
-                <span class="skill">Amor Palomo <i class="val">95%</i></span>
+                <span class="skill">Automation <i class="val">100%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar progress-bar-special" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                  <div class="progress-bar progress-bar-special" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
               </div>
@@ -188,17 +114,17 @@
               </div>
   
               <div class="progress">
-                <span class="skill">Mario Bros / Mario Maker <i class="val">70%</i></span>
+                <span class="skill">JavaScript <i class="val">40%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>
               </div>
   
               <div class="progress">
-                <span class="skill">Improvisación <i class="val">100%</i></span>
+                <span class="skill">Entrepeneurship<i class="val">99%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
                   </div>
                 </div>
               </div>
@@ -216,37 +142,35 @@
 
       <div class="section-title">
         <h2>Links</h2>
-        <p>Enlaces de plataformas y cuentas oficiales</p>
+        <p>Links to my Social Networks and Channels</p>
       </div>
 
       <div class="row">
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
           <img src="public/images/twitch-6860918_640.png" alt="Logo Twitch.tv" class="icon-links icon">
           <h4 class="title"><a href="https://www.twitch.tv/doge_cl" target="_blank">Canal Twitch</a></h4>
-          <p class="description">Canal de Twitch doge_cl. Temas: programción de videojuegos en vivo, tutoriales de
-            código, conversación sobre tecnología y entrevistas. Streaming de Videojuegos de PC, Nintendo Switch,
-            Indies, Game Jams.</p>
+          <p class="description">Twitch doge_cl. Topics: Videogames, programming, data, and food.</p>
         </div>
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
           <img src="public/images/dev-black.png" alt="Logo Dev.to" class="icon-links icon">
           <h4 class="title"><a href="https://dev.to/dogecl" target="_blank">dev.to</a></h4>
-          <p class="description">Artículos y tutoriales de programación, data y gamedev.</p>
+          <p class="description">Articles and tutorials about coding and gamedev.</p>
         </div>
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
           <img src="public/images/youtube-1495277_640.png" alt="youtube channel" class="icon-links icon">
           <h4 class="title"><a href="https://www.youtube.com/channel/UCr4GEUHPxyHwMnIrQIA23bA" target="_blank">Canal Youtube DogeDev</a></h4>
-          <p class="description">Canal de Youtube dedicado a la programación, datos, gamedev y viajes.</p>
+          <p class="description">(Soon) Gamedev Channel.</p>
         </div>
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
           <img src="public/images/podcast_avatar-640.jpg" alt="podcast datacrossing" class="icon-links icon">
           <h4 class="title"><a href="https://www.datacrossing.cl/" target="_blank">Podcast DataCrossing</a></h4>
-          <p class="description">Podcast dedicado al mundo de la Data / Engineering / Science / Analytics.
-            Entrevistas, tutoriales, tips de empleo, conversación y más junto a José ZeegCL.</p>
+          <p class="description">Podcast: Data / Engineering / Science / Analytics.
+            Interviews, tutorials, and more. With José ZeegCL.</p>
         </div>
         <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
           <img src="public/images/github-logo-2582757_640.png" alt="Github" class="icon-links icon">
-          <h4 class="title"><a href="https://github.com/dondogecl" target="_blank">Mi perfil Github</a></h4>
-          <p class="description">Mis proyectos de desarrollo y tutoriales en Github.</p>
+          <h4 class="title"><a href="https://github.com/dondogecl" target="_blank">Github</a></h4>
+          <p class="description">My eternal Work In Progress.</p>
         </div>
 
       </div>
@@ -260,7 +184,7 @@
 
       <div class="section-title">
         <h2>Stats</h2>
-        <p>Logros desbloqueados</p>
+        <p>Achievements unlocked</p>
       </div>
 
       <div class="row no-gutters">
@@ -271,14 +195,14 @@
             <img src="public/images/gallery/ufriky.jpg" alt="tv chinpokomon" class="thumbnails">
             <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="2"
               class="purecounter"></span>
-            <p><strong>Ufriky</strong> años de locución</p>
+            <p><strong>Ufriky</strong> years as a podcaster</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="count-box">
             <img src="public/images/splatoon-splatfestad.jpg" alt="tv chinpokomon" class="thumbnails">
-            <span data-purecounter-start="0" data-purecounter-end="432" data-purecounter-duration="1"
+            <span data-purecounter-start="0" data-purecounter-end="432" data-purecounter-duration="2"
               class="purecounter"></span>
             <p><strong>Twitch </strong> Followers</p>
           </div>
@@ -289,14 +213,14 @@
             <img src="public/images/Doge.png" alt="doge" class="thumbnails">
             <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
               class="purecounter"></span>
-            <p><strong>Doge</strong> un ser supremo</p>
+            <p><strong>Doge</strong> supreme being</p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="count-box">
             <img src="public/images/Python-logo-notext.svg" alt="python" class="thumbnails">
-            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="2"
+            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="2"
               class="purecounter"></span>
             <p><strong>Programming Languages </strong> </p>
           </div>
@@ -317,18 +241,17 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Galería de los recuerdos</h2>
-        <p>Una colección de los proyectos en los que participé, comunidades con las que comparto, fanarts, eventos y
-          más.</p>
+        <h2>Gallery of events</h2>
+        <p>Some memories about my projects in media and creating communities.</p>
       </div>
 
       <div class="row" data-aos="fade-up">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">Todo</li>
+            <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-flyers">Flyers</li>
             <li data-filter=".filter-fanarts">Fanarts/Meme</li>
-            <li data-filter=".filter-eventos">Juntas/Eventos</li>
+            <li data-filter=".filter-eventos">Meetups/Events</li>
           </ul>
         </div>
       </div>
@@ -518,110 +441,9 @@
   
 
   <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Pronto.</p>
-      </div>
-
-      <div class="row" data-aos="fade-in">
-
-        <div class="col-lg-5 d-flex align-items-stretch">
-          <div class="info">
-            <div class="address">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>In your kokoro</p>
-            </div>
-
-            <div class="email">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>contacto(arroba)doge.cl</p>
-            </div>
-
-            <div class="phone">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+13 13</p>
-            </div>
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18880217.008827787!2d-113.7756866254901!3d54.71465492663234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sca!4v1644737833701!5m2!1sen!2sca" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-
-        </div>
-
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="public/forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" class="form-control" id="name" required>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="name">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject" required>
-            </div>
-            <div class="form-group">
-              <label for="name">Message</label>
-              <textarea class="form-control" name="message" rows="10" required placeholder="Formulario de contacto deshabilitado temporalmente"></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit" disabled>Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Contact Section -->
+  
+  <!-- End Contact Section -->
 
 </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
-<footer id="footer">
-  <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong><span>iPortfolio</span></strong>
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> & Improved by DogeCL 2022
-    </div>
-  </div>
-</footer><!-- End  Footer -->
-
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="public/images/vendor/purecounter/purecounter.js"></script>
-<script src="public/images/vendor/aos/aos.js"></script>
-<script src="public/images/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="public/images/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="public/images/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="public/images/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="public/images/vendor/typed.js/typed.min.js"></script>
-<script src="public/images/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="public/images/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="public/javascripts/main.js"></script>
-
-</body>
-
-</html>
+<%- include ("partials/footer.ejs") %>
