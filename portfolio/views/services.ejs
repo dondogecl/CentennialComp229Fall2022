@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <%- include ('partials/head.ejs') %>
+  <body>
+    <%- include ('partials/header.ejs') %>
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+  
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Services</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li>Services information</li>
+            </ol>
+          </div>
+  
+        </div>
+      </section><!-- End Breadcrumbs -->
+  
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+  
+                  <div class="swiper-slide">
+                    <img src="public/images/django_logo.png" alt="">
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="public/images/code_1280.jpg" alt="">
+                    <!-- attribution not needed: https://pixabay.com/service/license/  -->
+                  </div>
+  
+                  <div class="swiper-slide">
+                    <img src="public/images/web_design_1280.jpg" alt="">
+                    <!-- attribution not needed: https://pixabay.com/service/license/  -->
+                  </div>
+  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Web Applications</h3>
+                <ul>
+                  <li><strong>Category</strong>: Web Development</li>
+                  <li><strong>Tools</strong>: Python (Flask, Django); JavaScript</li>
+                  <li><strong>Completed</strong>: 3 projects (to date)</li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>About this service</h2>
+                <p>
+                  I have experience creating the backend for web applications using Python, but also on front end using the latest JavaScript technologies
+                </p>
+                <p>
+                    The focus of the projects is scalability and security. Because of this I have experience deploying to the cloud of your preference:
+                </p>
+                <ul>
+                    <li>AWS</li>
+                    <li>Google Cloud</li>
+                    <li>Azure</li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+
+        <!-- 2 -->
+
+        <div class="container">
+  
+            <div class="row gy-4">
+    
+              <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+    
+                    <div class="swiper-slide">
+                      <img src="public/images/gcp_certification.png" alt="">
+                    </div>
+    
+                    <div class="swiper-slide">
+                      <img src="public/images/apache_spark_logo.svg.png" alt="">
+                    </div>
+    
+                    <div class="swiper-slide">
+                      <img src="public/images/tcs_logo.jpg" alt="">
+                    </div>
+    
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4">
+                <div class="portfolio-info">
+                  <h3>Data Engineering</h3>
+                  <ul>
+                    <li><strong>Category</strong>: Data / Cloud</li>
+                    <li><strong>Tools</strong>: GCP, AWS, Azure. Batch, Streaming, and many other architectures</li>
+                    <li><strong>Completed</strong>: +10 projects (to date)</li>
+                    <li><strong>Certifications</strong>: <a href="#">GCP Certified Professional Data Engineer</a></li>
+                    <li><strong>GCP Partners Directory</strong>: <a href="https://www.credential.net/profile/aacevedo531259/wallet" target="_blank">GCP Credential</a></li>
+                  </ul>
+                </div>
+                <div class="portfolio-description">
+                  <h2>About this service</h2>
+                  <p>
+                    I have 4 years of experience in data engineering. I have worked with on-premise and cloud infrastructure.
+                  </p>
+                  <p>
+                      My main experience is using the GCP tech stack, but also have developed projects using AWS and Azure.
+                  </p>
+                  <h3>Type of projects</h3>
+                  <ul>
+                      <li>Data Warehouses</li>
+                      <li>Streaming and batch pipelines</li>
+                      <li>Data migration</li>
+                      <li>Business Intelligence</li>
+                      <li>DataOps</li>
+                  </ul>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+      </section><!-- End Portfolio Details Section -->
+    </main>
+    <%- include ("partials/footer.ejs") %>
+  </body>
+</html>
