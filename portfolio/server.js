@@ -16,9 +16,11 @@ const cookieParser = require('cookie-parser');
 const passport = require('passport');
 const localStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
+const session = require('express-session');
+
+const userSchema = require('./models/user');
 
 // DB
-
 // URI
 let DB = require("./config/db");
 
@@ -33,6 +35,8 @@ mongoDB.on("error", console.error.bind(console, "Connection Error:"));
 mongoDB.once("open", () => {
   console.log("Database Connected!..");
 });
+
+// Models
 
 
 // require routers
@@ -49,6 +53,40 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({
+    secret: "testomg",
+    resave: false,
+    saveUninitialized: true
+}));
+
+// passport config
+app.use(passport.initialize());
+app.use(passport.session());
+
+// serialize and deserialize user
+passport.serializeUser((user, done) => {
+    done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+    User.findById(id, (err, user) => {
+        done(err, user);
+});
+});
+
+passport.use(new localStrategy(
+(username, password, done) =>{
+  User.findOne( {username: username }, (err, user) => {
+    if (err) return done(err);
+    if (!user) return done(null, false, { message: 'Wrong Username!'});    
+    
+    bcrypt.compare(password, user.password, (err, res) => {
+      if (err) return done(err);
+      if (res === false) return done(null, false, { message: 'Wrong Password!'});
+      });
+    });
+  }));
+    
 
 /** 
  * routes
@@ -145,4 +183,3 @@ function onError(error) {
       : 'port ' + addr.port;
     debug('Listening on ' + bind);
   }
-  
