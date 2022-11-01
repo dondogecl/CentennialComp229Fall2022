@@ -17,6 +17,8 @@ const cookieParser = require('cookie-parser');
 const indexRouter = require('./routes/index');
 const servicesRouter = require('./routes/services');
 const contactRouter = require('./routes/contact');
+//const contactForm = require('./routes/contactform');
+//const adminRouter = require('./routes/admin');
 
 
 // middleware
@@ -38,7 +40,17 @@ app.get('/', indexRouter);
 app.get('/contact', contactRouter);
 // services
 app.get('/services', servicesRouter);
+// login
+app.get('/login', (req, res, next)=>{
+    console.log("login");
+    res.render('admin/login.ejs', { title: 'Login' });
+    });
 
+// login
+//app.get('/admin', adminRouter)
+
+// POST
+// app.post('/contactform', contactForm)
 
 // static files
 app.use('/public', express.static('public'));

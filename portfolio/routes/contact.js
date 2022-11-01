@@ -1,3 +1,12 @@
+/**
+ * @author: I. Alejandro Acevedo
+ * @studentID: 301222234
+ * @course: COMP229-F2022
+ * @description: A portfolio website project
+ * @filename: routers/contact.js
+ * @utility: router for contact
+ */
+
 const express = require('express');
 const router = express.Router();
 
