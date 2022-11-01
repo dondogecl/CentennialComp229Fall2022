@@ -1,5 +1,7 @@
 // express application object
 // imports of modules
+
+// require config folder
 const config = require("./config");
 const express = require("express");
 const morgan = require("morgan");
@@ -40,6 +42,7 @@ module.exports = function () {
 
   require("../app/routes/index.server.routes.js")(app);
 
+  // serve static files
   app.use(express.static("./public"));
   return app;
 };
