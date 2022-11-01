@@ -136,3 +136,4 @@ local-credentials/
 .DS_Store
 Thumbs.db
 .vscode/
+config/secrets.json
